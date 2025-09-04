@@ -1,0 +1,115 @@
+user-service/
+├── pom.xml
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── ecommerce/
+│   │   │           └── user_service/
+│   │   │               ├── UserServiceApplication.java
+│   │   │               │
+│   │   │               ├── controller/
+│   │   │               │   ├── UserController.java
+│   │   │               │   ├── AdminController.java
+│   │   │               │   └── AuthController.java
+│   │   │               │
+│   │   │               ├── service/
+│   │   │               │   ├── UserService.java
+│   │   │               │   ├── UserServiceImpl.java
+│   │   │               │   ├── AuthService.java
+│   │   │               │   ├── AuthServiceImpl.java
+│   │   │               │   └── CustomUserDetailsService.java
+│   │   │               │
+│   │   │               ├── repository/
+│   │   │               │   ├── UserRepository.java
+│   │   │               │   └── RoleRepository.java
+│   │   │               │
+│   │   │               ├── entity/
+│   │   │               │   ├── User.java
+│   │   │               │   └── Role.java
+│   │   │               │
+│   │   │               ├── dto/
+│   │   │               │   ├── request/
+│   │   │               │   │   ├── UserRegistrationRequest.java
+│   │   │               │   │   ├── LoginRequest.java
+│   │   │               │   │   ├── UpdateUserRequest.java
+│   │   │               │   │   └── ChangePasswordRequest.java
+│   │   │               │   │
+│   │   │               │   └── response/
+│   │   │               │       ├── UserResponse.java
+│   │   │               │       ├── LoginResponse.java
+│   │   │               │       ├── JwtResponse.java
+│   │   │               │       └── ApiResponse.java
+│   │   │               │
+│   │   │               ├── exception/
+│   │   │               │   ├── GlobalExceptionHandler.java
+│   │   │               │   ├── UserNotFoundException.java
+│   │   │               │   ├── UserAlreadyExistsException.java
+│   │   │               │   ├── InvalidJwtException.java
+│   │   │               │   ├── InvalidCredentialsException.java
+│   │   │               │   └── UnauthorizedException.java
+│   │   │               │
+│   │   │               ├── security/
+│   │   │               │   ├── JwtUtils.java
+│   │   │               │   ├── JwtAuthenticationEntryPoint.java
+│   │   │               │   ├── JwtAuthenticationFilter.java
+│   │   │               │   ├── SecurityConfig.java
+│   │   │               │   └── PasswordEncoder.java
+│   │   │               │
+│   │   │               ├── config/
+│   │   │               │   ├── DatabaseConfig.java
+│   │   │               │   ├── SwaggerConfig.java
+│   │   │               │   └── FeignConfig.java
+│   │   │               │
+│   │   │               ├── client/
+│   │   │               │   ├── OrderServiceClient.java
+│   │   │               │   ├── CartServiceClient.java
+│   │   │               │   └── ProductServiceClient.java
+│   │   │               │
+│   │   │               ├── enums/
+│   │   │               │   ├── UserRole.java
+│   │   │               │   ├── UserStatus.java
+│   │   │               │   └── Gender.java
+│   │   │               │
+│   │   │               ├── validation/
+│   │   │               │   ├── EmailValidator.java
+│   │   │               │   ├── PasswordValidator.java
+│   │   │               │   └── UserValidationUtils.java
+│   │   │               │
+│   │   │               └── util/
+│   │   │                   ├── Constants.java
+│   │   │                   ├── DateUtils.java
+│   │   │                   └── ResponseUtils.java
+│   │   │
+│   │   └── resources/
+│   │       ├── application.yml
+│   │       ├── application-dev.yml
+│   │       ├── application-prod.yml
+│   │       ├── data.sql (optional - for initial data)
+│   │       └── schema.sql (optional - for DB schema)
+│   │
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── ecommerce/
+│                   └── user_service/
+│                       ├── UserServiceApplicationTests.java
+│                       │
+│                       ├── controller/
+│                       │   ├── UserControllerTest.java
+│                       │   └── AuthControllerTest.java
+│                       │
+│                       ├── service/
+│                       │   ├── UserServiceTest.java
+│                       │   └── AuthServiceTest.java
+│                       │
+│                       ├── repository/
+│                       │   └── UserRepositoryTest.java
+│                       │
+│                       └── security/
+│                           ├── JwtUtilsTest.java
+│                           └── SecurityConfigTest.java
+├── target/
+├── .gitignore
+└── README.md
+this is my folder structure for my user service
